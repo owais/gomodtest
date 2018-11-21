@@ -1,7 +1,11 @@
 package gomodtest
 
-import "github.com/jinzhu/now"
+import (
+	"time"
+
+	"github.com/jinzhu/now"
+)
 
 func Get() string {
-	return now.Monday()
+	return now.Monday().Format(time.UnixDate)
 }
